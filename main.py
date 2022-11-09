@@ -59,8 +59,6 @@ if __name__ == '__main__':
             # item name need to match exactly the name in the json file
     print("finished writing stock data to csv")
 
-
-
     # f2 = open('stock_data.txt', 'r')
     # data = f2.read()
     # f2.close()
