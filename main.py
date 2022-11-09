@@ -8,9 +8,13 @@ import pandas as pd
 from dateutil.relativedelta import relativedelta
 from datetime import date
 
+# TODO: need to add GUI
+# TODO: need to add notification system
+# TODO: need to support more than 1 stock(i.e. stock name input list)
+# TODO: need to support more moving average dates
+
 if __name__ == '__main__':
     # #get the stock data from sina finance
-    # url = 'https://finance.sina.com.cn/realstock/company/sz300813/nc.shtml'
     url = 'http://money.finance.sina.com.cn/quotes_service/api/json_v2.php/CN_MarketData.getKLineData?symbol=sz300813&scale=5&ma=10&datalen=200'
     # 在url中（参数为：symbol=【股票编号】&scale=【分钟间隔（5、15、30、60）】&ma=【均值（5、10、15、20、25）】&datalen=【查询个数点（最大值1023）】）
     r = requests.get(url)
